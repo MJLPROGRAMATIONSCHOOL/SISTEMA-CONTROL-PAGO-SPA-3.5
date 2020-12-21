@@ -105,7 +105,7 @@ public class srvColaborador extends HttpServlet {
             this.printMessage(e.getMessage(), response);
         }
     }
-
+    
     private void listarColaborades(HttpServletResponse response) throws IOException {
         PrintWriter out = response.getWriter();
         try {
