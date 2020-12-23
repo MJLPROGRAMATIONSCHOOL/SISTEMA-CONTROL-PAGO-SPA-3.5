@@ -24,7 +24,7 @@
     <body class="hold-transition login-page">
         <div class="login-box">
             <div class="login-logo">
-                <a href="#"><b>Sistema Control </b>Pago</a>
+                <a href="#"><b>Sistema Control </b>Pago ©</a>
             </div>
             <!-- /.login-logo -->
             <div class="login-box-body">
@@ -41,13 +41,33 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-8">
+                            <div class="icheck-primary">
+                                <input type="checkbox" checked="" id="remember">
+                                <label for="remember">
+                                    Recuérdame
+                                </label>
+                            </div>
                         </div>
                         <div class="col-xs-4">
                             <button type="submit" class="btn btn-primary btn-block btn-flat">Ingresar</button>
                         </div>
                     </div>
-                    <div id="contenedor"></div>
+                    <!--<div id="contenedor"></div> -->
                 </form>
+                <!-- prueba se puede quitar-->
+                <div class="social-auth-links text-center mb-3">
+                    <p>- Alerta del Sistema -</p>
+                    <div id="contenedor" class="alert alert-success" role="alert">
+                        <a href="#" class="btn btn-block btn-social btn-flat"><i class="fa fa-info"></i> Mensaje: 
+                            ${msje}</a>
+                    </div>
+                </div>
+                <p class="mb-1">
+                    <a href="#">Olvidé mi contraseña</a>
+                </p>
+                <p class="mb-0">
+                    <a href="#" class="text-center">Registrarme</a>
+                </p>
             </div>
         </div>
         <!-- jQuery 3 -->
@@ -57,6 +77,7 @@
         <!-- iCheck -->
         <script src="js/alertify.min.js" type="text/javascript"></script>
         <script src="plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+        <script src="js/alertify.js" type="text/javascript"></script>
         <script src="js/scriptSession.js" type="text/javascript"></script>
         <script src="../bower_components/sweetAlert/sweetalert.min.js" type="text/javascript"></script>
         <!-- <script>
