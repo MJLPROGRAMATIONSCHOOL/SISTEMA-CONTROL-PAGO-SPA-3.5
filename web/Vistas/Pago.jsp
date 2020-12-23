@@ -320,14 +320,14 @@
                                                     </select>  --%>                                             
                                                 </div>
                                             </div>
-                                            <table class="table">
+                                            <table class="table table-bordered table-striped dataTable table-hover" class="display">
                                                 <thead>
                                                     <tr>
-                                                        <th>Número</th><th>Servicio</th><th>Descripción</th><th>Accion</th>
+                                                        <th>Número</th><th>Servicio</th><th>Accion</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody id="tablaAgregarServicio">
-
+                                                    
                                                 </tbody>
                                             </table>
                                         </div>                                      
@@ -395,6 +395,7 @@
                                                         for (Pago pa : pagos) {
                                                     %>
                                                     <option value="<%=pa.getIdPago()%>"><%=pa.getServicio()%></option>
+                                                    
                                                     <%}%>
                                                 </select>
                                             </div>
@@ -403,8 +404,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer justify-content-between">
-                                <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="fas fa-window-close"></span> Cerrar</button>
-                                <button type="button" onclick="agregarLibro()" class="btn btn-primary "><span class="fas fa-save"></span> Agregar</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="fa fa-window-close"></span> Cerrar</button>
+                                <button type="button" onclick="agregarServicio()" class="btn btn-primary "><span class="fa fa-save"></span> Agregar</button>
                             </div>
                         </div>
                         <!-- /.modal-content -->
@@ -480,6 +481,70 @@
         <script src="../js/home.vista.js" type="text/javascript"></script>
         <script src="../bower_components/sweetAlert/sweetalert.min.js" type="text/javascript"></script>
     </body>
+    <script>
+        function CierraPopup() {
+            $("#modal-lg").modal('hide'); //ocultamos el modal            
+        }
+    </script>
+    <script>
+        /***************************************************************************
+         *          AGREGAR LIBRO
+         *************************************************************************** 
+         */
+        function agregarServicio() {
+
+            if ($('#idPag').val() != "") {
+
+
+                var repetido = false;
+                var idPag = $('#idPag').val();
+                var valorCat = $("#idPag option:selected").text();
+
+
+                var arr = $('#tablaAgregarServicio tr').find('td:first').map(function () {
+                    return $(this).text();
+                }).get();
+
+                for (var i = 0; i < arr.length; i++) {
+                    if (idPag == arr[i]) {
+                        repetido = true;
+                    }
+                    console.log("Numero: " + arr[i]);
+                }
+                console.log(idPag + ", " + valorCat);
+
+                if (!repetido) {
+                    $('#tablaAgregarServicio').append('<tr><td>' + idPag + '</td><td>' + valorCat + '</td><td>\n\
+                        <button type="button"  onclick="eliminarFilaServicio(this)" class="btn btn-danger"><span class="fa fa-save"></span> Eliminar</button>\n\
+                        </td></tr>');
+
+                    $("#modal-agregar-servicio").modal('hide');
+
+                } else {
+
+                    swal("Servicio repetido, elige otro por favor.!", {
+                        icon: "warning"
+                    });
+
+                }
+
+            } else {
+
+                console.log("Seleccione un servicio");
+                alert("Seleccione un servicio");
+            }
+
+        }
+        /***************************************************************************
+         *          ELIMINAR UNA FILA DE LA TABLA DONDE AGREGAMOS LOS SERVICIOS
+         *************************************************************************** 
+         */
+        function eliminarFilaServicio(btn) {
+            var row = btn.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
+    
 </html>
 <%
     } else {
