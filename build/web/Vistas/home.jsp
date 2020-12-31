@@ -39,6 +39,7 @@
 
                 <!-- Logo -->
                 <a href="Principal.jsp" class="logo">
+                   
                     <!-- mini logo for sidebar mini 50x50 pixels -->
                     <span class="logo-mini"><b>S</b>CP</span>
                     <!-- logo for regular state and mobile devices -->
@@ -164,9 +165,8 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="../Vistas/Pago.jsp"><i class="fa fa-cart-plus"></i> Nuevo Pago</a></li>
-                                <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> Administrar Pagos</a></li>
-
+                                <li><a href="../Vistas/Movimiento.jsp"><i class="fa fa-cart-plus"></i> Nuevo Pago</a></li>
+                                <li><a href="../Vistas/GestionarPagos.jsp"><i class="glyphicon glyphicon-list-alt"></i> Administrar Pagos</a></li>
                             </ul>
                         </li>
 

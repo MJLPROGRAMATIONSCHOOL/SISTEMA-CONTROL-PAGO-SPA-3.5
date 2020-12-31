@@ -65,7 +65,6 @@
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
 
-
                             <!-- User Account Menu -->
                             <li class="dropdown user user-menu">
                                 <!-- Menu Toggle Button -->
@@ -95,7 +94,6 @@
                                 </ul>
                             </li>
                             <!-- Control Sidebar Toggle Button -->
-
                         </ul>
                     </div>
                 </nav>

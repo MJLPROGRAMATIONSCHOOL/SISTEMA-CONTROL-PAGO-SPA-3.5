@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/web/Vistas/Colaborador.jsp</file>
-            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/web/Vistas/borrador.jsp</file>
-            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/web/Vistas/Pago.jsp</file>
-            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/src/java/DAO/OficinaDAO.java</file>
-            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/web/Vistas/Oficina.jsp</file>
-            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/src/java/DAO/PagoDAO.java</file>
+            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/src/java/DAO/ArticuloDAO.java</file>
+            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/src/java/Controlador/srvPago.java</file>
+            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/src/java/Controlador/srvControlador.java</file>
+            <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/web/Vistas/Movimiento.jsp</file>
             <file>file:/C:/Users/lainc/Documents/NetBeansProjects/SISTEMA-CONTROL-PAGO%20SPA%203.5/web/Vistas/home.jsp</file>
         </group>
     </open-files>
